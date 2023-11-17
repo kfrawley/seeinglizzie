@@ -1,29 +1,28 @@
 ---
-# Default home page with boxes providing collection stats
-layout: page
+layout: default
+custom-foot: 
+lazyload: true
 ---
-{%- assign items = site.data[site.metadata] | where_exp: 'item', 'item.objectid != nil' -%}
-<div class="row">
-  <div class="col-md-8">
 
-    {% include index/description.html %}
-    {% include index/carousel.html title="Sample Items" height="300" %}
-  
+<style>
+body {
+  font-family: 'Playfair Display', serif;
+    font-size: 18 px;
+}
+    </style>
+
+<div class="container">
+  <div class="row align-items-center">
+           <img src="{{ '/assets/img/SeeingLizzie-3.png' | relative_url }}" class="img-fluid" alt="photo of Lizzie">
+      </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8 index-content">
+            <div class="body">
+            <p>In the 19th century, Elizabeth "Lizzie" Breckenridge's life was predominantly documented through the Wylie family letters and diary entries. These historical records shed light on Lizzie's daily routines and responsibilities, which primarily revolved around her labor. Her presence in these documents is often associated with tasks such as cooking, gardening, cleaning, and even tending to children who eagerly offered their assistance.</p>
+            <p>However, the Wylie family papers provide only a limited glimpse into Lizzie's inner thoughts and feelings regarding her work and living conditions. To uncover a more comprehensive understanding of her experiences, a dedicated project has been initiated. This undertaking involves meticulously gathering all references to Elizabeth Breckenridge found within the Wylie Family correspondence.</p>
+            <p>The objective of this project is to compile these references, creating a comprehensive collection that will be made accessible to the broader public. By doing so, it aims to rectify the historical underrepresentation of Elizabeth "Lizzie" Breckenridge's narrative. This initiative is instrumental in recontextualizing her life within the historical landscape of Bloomington during the 19th century, providing valuable insights into African American life during that era.</p>
+            </div>
+            </div>
+    </div>
   </div>
-  <div class="col-md-4">  
-
-    {% include index/time.html %}
-
-    {% include index/featured-terms.html field="subject" title="Top Subjects" btn-color="primary" %}
-
-    {% include index/featured-terms.html field="location" title="Locations" btn-color="outline-secondary" %}
-
-    {% include index/objects.html %}
-
-  </div>
-  <div class="col-md-12">
-
-    {% include index/data-download.html %}
-
-  </div>
-</div>
