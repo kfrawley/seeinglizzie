@@ -42,9 +42,9 @@ body {
     <dt class="glossary-def"><div id="{{ item.key }}"><a href="{{ '/browse.html#' | append: item.key | relative_url }}">
     {{ item.name }}</a></div></dt> 
     {% if item.annotation %}<dd>{{ item.annotation }}</dd>{%- endif -%}
-    
+
+    {%- endif -%}
 {%- endfor -%}
-</dl>
 
 {%- endfor -%}
 
