@@ -45,7 +45,7 @@ body {
     
 {%- endif -%}
 
-{%- endfor -%}
 </dl>
+{%- endfor -%}
 
 
