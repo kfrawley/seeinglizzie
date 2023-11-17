@@ -30,7 +30,7 @@ body {
 </ul>
 <hr>
 
-<div>
+</div>
 
 {% for letter in uniqueLetters %}
 <h2 class="pt-4" id="{{ letter }}">{{ letter }}</h2>
