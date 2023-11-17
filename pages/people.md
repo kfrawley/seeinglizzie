@@ -16,7 +16,7 @@ body {
     </style>
 
 <div class="title">People</div>
-<div class="body"></div>
+<div class="body">
 <p>Learn more about the people in Marie's letters. Click on a name to browse related letters.</p>
 
 {% capture letters %}{% for item in site.data.persname_main %}{{ item.name | slice: 0 | capitalize }};{% endfor %}{% endcapture %}
@@ -43,8 +43,6 @@ body {
     {{ item.name }}</a></div></dt> 
     {% if item.annotation %}<dd>{{ item.annotation }}</dd>{%- endif -%}
     
-{%- endif -%}
-
 {%- endfor -%}
 </dl>
 
