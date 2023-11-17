@@ -28,9 +28,9 @@ body {
 <li class="list-inline-item h2"><a href="#{{ letter }}">{{ letter }}</a></li>
 {% endfor %}
 </ul>
-<hr></div>
+<hr>
 
-
+<div>
 
 {% for letter in uniqueLetters %}
 <h2 class="pt-4" id="{{ letter }}">{{ letter }}</h2>
@@ -42,10 +42,11 @@ body {
     <dt class="glossary-def"><div id="{{ item.key }}"><a href="{{ '/browse.html#' | append: item.key | relative_url }}">
     {{ item.name }}</a></div></dt> 
     {% if item.annotation %}<dd>{{ item.annotation }}</dd>{%- endif -%}
-  </dl>
-  
+    
 {%- endif -%}
+
 {%- endfor -%}
 </dl>
+
 {%- endfor -%}
 
