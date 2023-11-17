@@ -28,7 +28,7 @@ body {
 <li class="list-inline-item h2"><a href="#{{ letter }}">{{ letter }}</a></li>
 {% endfor %}
 </ul>
-<hr>
+<hr></div>
 
 
 
@@ -49,4 +49,4 @@ body {
 </dl>
 
 {%- endfor -%}
-</div>
+
