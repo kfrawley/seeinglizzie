@@ -1,50 +1,60 @@
 ---
-# JS based item page for CB-GH
 layout: default
-custom-foot: js/item-js.html;js/modal-hash-js.html
-gallery: true
 ---
 
-<div class="container py-3">
-    <ul class="breadcrumb h6">
-        <li class="breadcrumb-item"><a class="text-dark" href="{{ '/' | relative_url }}">{{ site.title }}</a></li>
-        <li class="breadcrumb-item"><a class="text-dark" href="{{ '/browse.html' | relative_url }}">Browse</a></li>
-        <li id="bc-title" class="breadcrumb-item active text-dark" aria-current="page"></li>
-    </ul>
-    <div class="my-0 h5 small" id="item-format"></div>
-    <h2 id="item-title" class="mb-3"></h2>
+{% assign year = page.letter_date | split: "-" | first %}
 
-    <div id="loading" class="text-center">
-        <div class="spinner-border text-secondary" role="status"><span class="visually-hidden">Loading...</span></div>
-    </div>
-
-    <div class="row justify-content-center">
-
-        <div class="col-12 col-md-10">
-            <div id="item-content"></div>
-        </div>
-        <div class="col-12 col-md-10">
-            <div id="item-metadata">
+<div class="container-fluid py-4 px-4">
+    <h1 class="pt-3 text-center">{{ page.creator }} to {{ page.recipient }}</h1>
+    <h2 class="pb-2 text-center">{{ page.letter_date | date: "%A, %B %e, %Y" }}</h2>
+    <div class="row mt-4 mx-auto">
+        <div class="col-md-6">
+            <div class="item-view pl-5">
+                <div id="osd" class="image-viewer"></div>
             </div>
-        </div> 
-    </div>
+        </div>
+        <div class="col-md-6">
+            <div class="px-5">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active px-2" id="trans-tab" data-toggle="tab" href="#trans" role="tab" aria-controls="trans" aria-selected="true">Reference</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2" id="raw-tab" data-toggle="tab" href="#raw" role="tab" aria-controls="raw" aria-selected="false">Full Transcription</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2" id="edit-tab" data-toggle="tab" href="#edit" role="tab" aria-controls="edit" aria-selected="false">Information</a>
+                    </li>
+                </ul>
+                <div class="tab-content my-3" id="myTabContent">
+                    <!--<div class="ml-auto mt-2 small">
+                        <a href="{{ year | strip | prepend: '/timeline.html#' | relative_url }}" title="View letter on timeline">View on Timeline</a>
+                    </div>-->
 
-    {%- if site.data.theme.browse-buttons == true -%}
+                    {{ content }}
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mb-4">
+        <div class="col-md-8 text-center">
+            <hr>
+            <h4><em>Source</em></h4>
+            <p>The Theophilus Adam Wylie Familiy Correspondence, Wylie House Museum, Indiana University Libraries, Bloomington.</p>
+            <p><em>{{ page.citation }}</em></p>
+        </div>
+    </div>
     <div class="text-center">
-        <a id="prev-button" class="btn btn-secondary">&laquo; Previous</a>
-        <a class="btn btn-secondary" href="{{ '/browse.html' | relative_url }}">Back to browse</a>
-        <a id="for-button" class="btn btn-secondary">Next &raquo;</a>
+        <a id="prev-button" class="btn btn-info">&laquo; Previous</a>
+        <a class="btn btn-info" href="{{ '/browse.html' | relative_url }}">Browse</a>
+        <a id="for-button" class="btn btn-info">Next &raquo;</a>
     </div>
 
     <div id="item-nav">
         <div class="d-none d-md-block">
-            <a id="back-button" class="previous btn btn-lg btn-secondary">&laquo;</a>
-            <a id="next-button" class="next btn btn-lg btn-secondary">&raquo;</a>
+            <a id="back-button" class="previous btn btn-lg btn-info">&laquo;</a>
+            <a id="next-button" class="next btn btn-lg btn-info">&raquo;</a>
         </div>
     </div>
-    {% else %}
-    <div class="text-center">
-        <a class="btn btn-outline-primary" href="{{ '/browse.html' | relative_url }}">&laquo; Back to Collection Browse</a>
-    </div>
-    {% endif %}
 </div>
