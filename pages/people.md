@@ -17,7 +17,7 @@ body {
 
 <div class="title">People</div>
 <div class="body">
-<p>Learn more about the people in Marie's letters. Click on a name to browse related letters.</p>
+<p>Learn more about the people in Marie's letters. Click on a name to browse related letters.</p></div>
 
 {% capture letters %}{% for item in site.data.persname_main %}{{ item.name | slice: 0 | capitalize }};{% endfor %}{% endcapture %}
 {%- assign uniqueLetters = letters | split: ';' | uniq | sort -%}
@@ -30,7 +30,7 @@ body {
 </ul>
 <hr>
 
-</div>
+<div>
 
 {% for letter in uniqueLetters %}
 <h2 class="pt-4" id="{{ letter }}">{{ letter }}</h2>
