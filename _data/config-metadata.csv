@@ -1,8 +1,8 @@
 field,display_name,browse_link,external_link
 objectid,Letter ID,,
 filename,Filename,,
-creator,Sender,,
-recipient,Recipient,,
+creator,Sender,true,
+recipient,Recipient,true,
 date,Date,,
 title,Title,,
 reference,Reference to Lizzie,,
