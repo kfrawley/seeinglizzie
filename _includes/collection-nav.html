@@ -17,7 +17,7 @@
                 <li class="nav-item {% if page.url contains 'browse.html' %}active{% endif %}">
                     <a class="nav-link" href="{{ 'browse.html' | relative_url }}">Letters</a>
                 </li>
-                <li class="nav-item {% if page.url contains 'subjects.html' %}active{% endif %}">
+                <li class="nav-item {% if page.url contains 'people.html' %}active{% endif %}">
                     <a class="nav-link" href="{{ 'people.html' | relative_url }}">People</a>
                 </li>
                 <li class="nav-item {% if page.url contains 'subjects.html' %}active{% endif %}">
@@ -32,12 +32,8 @@
                 <li class="nav-item {% if page.url contains '/data/' %}active{% endif %}">
                     <a class="nav-link" href="{{ '/data.html' | relative_url }}">Data</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link  dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="https://kfrawley.github.io/seeinglizzie/about.html">About</a>
-                        <a class="dropdown-item" href="https://kfrawley.github.io/seeinglizzie/lizzie.html">About Lizzie</a>
-                    </div>
+                  <li class="nav-item {% if page.url contains 'about.html' %}active{% endif %}">
+                    <a class="nav-link" href="{{ '/about.html' | relative_url }}">About</a>
                 </li>
         </ul>
     </div>
