@@ -7,7 +7,7 @@ credits: true
 <style>
 body {
   font-family: 'Playfair Display', serif;
-    font-size: 20px;
+    font-size: 18 px;
 }
 
 .title {
@@ -25,7 +25,5 @@ body {
 
 <div class="title"><h4 class="display-1">Family</h4></div>
 <div class="title"><h4 class="display-1">Tenure at the Wylie House</h4></div>
-<div class="title"><h4 class="display-1">Links</h4></div>
-
 
 
