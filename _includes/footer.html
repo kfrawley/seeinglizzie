@@ -1,28 +1,16 @@
 <footer class="bg-dark pt-4 mt-auto container-fluid">
 
-    <div class="row border-bottom border-white pb-4 mb-2">
-
-        <div class="col-md-7  px-4 mt-2">
-
-            <h2 class="h4"><a href="{{ '/' | relative_url }}" class="text-white font-weight-normal">{{ site.title }}</a></h2>
-            <p class="text-white"><small>{{ site.description }}</small></p>
-            <nav>
-                <ul id="footer-nav" class="nav nav-pills ">
-                    {%- assign navItems = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nil' -%}
-                    {% for nav in navItems %}
-                    <li class="nav-item">
-                    {% if nav.stub %}
-                        <a class="nav-link text-light{% if page.url == nav.stub %} active{% endif %}" href="{{ nav.stub | relative_url }}">{{ nav.display_name }}</a>
-                    {%- else -%}
-                    {% assign childStub = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nav.display_name' | first %}
-                        <a class="nav-link text-light{% if page.url == childStub.stub %} active{% endif %}" href="{{ childStub.stub | relative_url }}">{{ nav.display_name }}</a>
-                    {% endif %}
-                    </li>
-                    {%- endfor -%}
-                </ul>
-            </nav>
-
-        </div>
-
-        
+    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+  <div class="bg-dark p-4">
+    <h2 class="h4"><a href="{{ '/' | relative_url }}" class="text-white font-weight-normal">{{ site.title }}</a></h2>
+    <span class="text-white"><small>{{ site.description }}</small></span>
+  </div>
+</div>
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
 </footer>
