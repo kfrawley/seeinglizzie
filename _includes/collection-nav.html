@@ -35,8 +35,8 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link  dropdown-toggle{% if page.url contains 'about' %} active{% endif %}" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item {% if page.url contains 'about-lizzie.html' %}active{% endif %}" href="{{ 'about-lizzie.html' | relative_url }}">Lizzie</a>
-                        <a class="dropdown-item {% if page.url contains 'about.html' %}active{% endif %}" href="{{ 'about.html' | relative_url }}">This Project</a>
+                        <a class="dropdown-item {% if page.url contains '/lizzie.html' %}active{% endif %}" href="{{ 'about-lizzie.html' | relative_url }}">Lizzie</a>
+                        <a class="dropdown-item {% if page.url contains '/about.html' %}active{% endif %}" href="{{ 'about.html' | relative_url }}">This Project</a>
                     </div>
                 </li>
         </ul>
