@@ -1,7 +1,7 @@
 field,display_name,browse_link,external_link
 objectid,Letter ID,,
 filename,Filename,,
-creator,Creator,,
+creator,Sender,,
 recipient,Recipient,,
 date,Date,,
 title,Title,,
