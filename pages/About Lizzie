@@ -28,4 +28,8 @@ body {
 <div class="title">Tenure at the Wylie House</div>
 <p>In the 19th century, Elizabeth "Lizzie" Breckenridge's life was predominantly documented through the Wylie family letters and diary entries. These historical records shed light on Lizzie's daily routines and responsibilities, which primarily revolved around her labor. Her presence in these documents is often associated with tasks such as cooking, gardening, cleaning, and even tending to children who eagerly offered their assistance.</p>
 
-{% include feature/image.html objectid="lizzieinkitchen" width="75" %}
+<div class="container">
+  <div class="row align-items-center">
+           <img src="{{ '/assets/img/lizzieinkitchen.jpeg' | relative_url }}" class="img-fluid" alt="photo of Lizzie in Kitchen">
+      </div>
+</div>
