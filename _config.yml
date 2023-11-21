@@ -14,7 +14,7 @@
 # on GitHub Pages it is your github repository's name prefixed with a /
 #baseurl: /collectionbuilder-gh 
 # location of code, the full url to your github repository
-source-code: https://github.com/CollectionBuilder/SeeingLizzie
+source-code: https://github.com/CollectionBuilder/collectionbuilder-gh
 
 ##########
 # SITE SETTINGS
@@ -25,7 +25,7 @@ title: Seeing Lizzie
 tagline: A repository dedicated to Elizabeth "Lizzie" Breckenridge's life and legacy.
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "A repository dedicated to Elizabeth "Lizzie" Breckenridge, who's life and presence has been predominantly documented through the Wylie family letters and diary entries."
+description: A repository dedicated to Elizabeth "Lizzie" Breckenridge, who's life and presence has been predominantly documented through the Wylie family letters and diary entries.
 author: Katherine Frawley
 
 ##########
