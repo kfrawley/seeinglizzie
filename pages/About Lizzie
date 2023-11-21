@@ -12,7 +12,7 @@ body {
 
 .title {
         font-family: 'Dawning of a New Day', cursive;
-    font-size: 36 px;
+    font-size: 64 px;
      
 }
     </style>
