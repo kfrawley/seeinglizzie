@@ -12,7 +12,7 @@ body {
 
 .title {
         font-family: 'Dawning of a New Day', cursive;
-        font-size: 72 px;
+        font-size: 72px;
       }
     </style>
 
@@ -25,7 +25,7 @@ body {
 
 <div class="title"><h4 class="display-1">Links</h4></div>
 <ul>
-  <li> [About the Wylie House Museum] (https://libraries.indiana.edu/wylie-house-museum) </li>
-  <li> [The Wylie House Archival Repository] (https://archives.iu.edu/repositories/wyliehouse) </li>
-  <li> [Elizabeth Breckenridge Digital Exhibit] (https://collections.libraries.indiana.edu/wyliehouse/exhibits/show/eb) </li>
+  <li> <a href="https://libraries.indiana.edu/wylie-house-museum">About the Wylie House Museum</a></li>
+ <li> <a href="https://archives.iu.edu/repositories/wyliehouse">The Wylie House Museum Archival Respository</a></li>
+  <li> <a href="https://collections.libraries.indiana.edu/wyliehouse/exhibits/show/eb">Elizabeth Breckenridge Digital Exhibit</a></li>
 </ul>
