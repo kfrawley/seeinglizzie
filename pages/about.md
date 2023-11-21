@@ -22,3 +22,10 @@ body {
 <p>The deliberately narrow focus on Lizzie aims to prioritize materials directly related to comprehending Elizabeth Breckenridge's role, as indicated by limited references to her within the Wylie Family Correspondence archival collection. This approach ensures that her narrative remains central within the collection, shedding light on a previously overlooked aspect of history.</p>
 <p>This repository was created to highlight the role that Elizabeth “Lizzie” Breckenridge held in the Wylie Family household, both in terms of her personal relationships and occupational responsibilities. There are over 300 references to Lizzie found within family correspondence and personal diaries.</p>
 <p>References to Elizabeth “Lizzie” Breckenridge in Wylie Family letters and diaries have been researched, transcribed, digitized, and encoded for this project.</p>
+
+<div class="title"><h4 class="display-1">Links</h4></div>
+<ul>
+  <li> [About the Wylie House Museum] (https://libraries.indiana.edu/wylie-house-museum) </li>
+  <li> [The Wylie House Archival Repository] (https://archives.iu.edu/repositories/wyliehouse) </li>
+  <li> [Elizabeth Breckenridge Digital Exhibit] (https://collections.libraries.indiana.edu/wyliehouse/exhibits/show/eb) </li>
+</ul>
